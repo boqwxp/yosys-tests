@@ -1,0 +1,4 @@
+read_verilog top.v
+hierarchy
+logger -expect-no-warnings
+synth_ice40
