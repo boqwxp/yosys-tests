@@ -1,0 +1,4 @@
+logger -expect warning "Replacing memory \\counters with list of registers." 1
+read_verilog top.v
+prep
+select -assert-count 4 t:$dff
