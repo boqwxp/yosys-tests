@@ -1,0 +1,4 @@
+read_verilog -sv top.v
+prep
+alumacc
+select -assert-count 2 t:$macc

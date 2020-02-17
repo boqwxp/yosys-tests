@@ -1,0 +1,4 @@
+read_verilog top.v
+synth_ice40 -nocarry
+opt_clean
+select -assert-count 1 t:SB_LUT4
