@@ -1,0 +1,4 @@
+read_verilog top.v
+synth
+cd top
+select -assert-none y reg_assign %a %d
