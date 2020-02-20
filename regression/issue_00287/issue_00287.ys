@@ -1,0 +1,2 @@
+logger -werror "is implicitly declared at"
+read_verilog -sv top.v

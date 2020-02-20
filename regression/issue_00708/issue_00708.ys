@@ -1,0 +1,2 @@
+read_verilog  top.v
+sat -verify -prove-asserts -show-ports -prove a 0
