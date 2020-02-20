@@ -1,0 +1,7 @@
+read_verilog top.v
+synth
+logger -expect log "Eval result: \\out = 8'00001000." 2
+eval -set addr 24
+abc
+eval -set addr 24
+

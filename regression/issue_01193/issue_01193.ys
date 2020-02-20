@@ -1,0 +1,3 @@
+read_verilog -sv top.v
+logger -expect error "Latch inferred for signal" 1
+proc

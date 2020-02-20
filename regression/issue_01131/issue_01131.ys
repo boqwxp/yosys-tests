@@ -1,0 +1,2 @@
+logger -expect error "Value conversion failed" 1
+read_verilog top.v

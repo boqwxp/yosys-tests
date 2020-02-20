@@ -1,0 +1,4 @@
+read -formal top.v
+hierarchy -top top
+synth
+sat -verify -prove-asserts -show-ports -set w 3'b100 -prove y 1'b1

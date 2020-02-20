@@ -1,0 +1,3 @@
+read_verilog top.v
+logger -werror "neg_clk=1.q has an unprocessed"
+synth_xilinx
