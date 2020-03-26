@@ -1,0 +1,4 @@
+logger -warn "is implicitly declared."
+logger -nowarn "is assigned in a block at"
+logger -expect-no-warnings
+read_verilog top.v
