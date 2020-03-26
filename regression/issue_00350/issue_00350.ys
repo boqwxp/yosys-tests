@@ -1,0 +1,5 @@
+read_verilog top.v
+synth
+abc -clk clk -g AND
+opt_clean
+select -assert-count 2 a:init
