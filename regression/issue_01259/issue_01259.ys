@@ -1,4 +1,3 @@
 read_verilog top.v
 hierarchy -top top
-write_smt2 test.smt2
-!rm test.smt2
+write_smt2
