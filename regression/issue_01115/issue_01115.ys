@@ -1,0 +1,3 @@
+read_verilog -sv top.v
+proc
+sat -verify -prove-asserts -show-ports -enable_undef -prove o 33'bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
