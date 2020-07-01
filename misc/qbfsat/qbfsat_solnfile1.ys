@@ -6,7 +6,7 @@ module demo9(a, b, trigger);
 	input [3:0] b;
 	wire [7:0] i = {a, b};
 	(* maximize *) wire [7:0] h;
-       	assign h = $anyconst;
+	assign h = $anyconst;
 
 	wire [7:0] t0 = ((i << 8'b00000010) + 8'b00000011);
 	output trigger = (t0 > h) && (h < 8'b00000100);
@@ -19,4 +19,4 @@ endmodule
 EOT
 proc; techmap
 prep -top demo9 -nordff
-qbfsat -specialize-from-file ../qbf_solution1.txt
+qbfsat -specialize-from-file ../demo9.soln
